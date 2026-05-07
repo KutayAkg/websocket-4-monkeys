@@ -46,10 +46,9 @@ Eğer şu işlerden birini yapıyorsan WebSocket ŞARTTIR:
 | **Benzetme** | Mektup göndermek. | Telefonla konuşmak. |
 
 ---
-## Bu dosya içerisinde canlı mesaj uygulaması bulunmakta, 
-
-Önce npm install ardından npm install ws ile bu projenin bağımlılıklarını kurunuz.
-Ardından node server.js ile sunucuyu başlatıp index.html dosyasını 2 farklı pencereden açınız.
+Bu dosya içerisinde canlı mesaj uygulaması bulunmakta
+Önce **npm install** ardından **npm install ws** ile bu projenin bağımlılıklarını kurunuz.
+Ardından **node server.js**  ile sunucuyu başlatıp **index.html** dosyasını 2 farklı pencereden açınız.
 
 Yapılan mesajların canlı olarak 2 farklı pencerede gerçek zamanlı olarak gözüktüğünü göreceksiniz.
 
