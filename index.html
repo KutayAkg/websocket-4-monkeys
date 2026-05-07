@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canlı WebSocket Sohbeti</title>
+    <!-- Şık görünmesi için CSS dosyamızı bağlıyoruz -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- İsim Belirleme Ekranı (Overlay) -->
+    <div id="name-overlay" class="overlay">
+        <div class="name-card">
+            <h2>Hoş Geldin! 👋</h2>
+            <p>Sohbete başlamak için bir isim belirle:</p>
+            <input type="text" id="username-input" placeholder="Adın nedir?" autocomplete="off">
+            <button id="start-btn">Sohbete Başla</button><br><br>
+            <p>
+                Daha iyi anlayabilmek için 2 farklı pencereden index.html dosyasını açıp test edebilirsiniz.
+            </p>
+        </div>
+    </div>
+    <div class="chat-container" id="main-chat" style="display: none;">
+        <header>
+            <h1>💬 Canlı Sohbet</h1>
+            <p id="status" class="offline">Bağlanılıyor...</p>
+        </header>
+
+        <!-- Mesajların akacağı yer -->
+        <div id="chat-box" class="chat-box"></div>
+
+        <!-- Yazma alanı -->
+        <div class="input-area">
+            <input type="text" id="message-input" placeholder="Mesajını yaz ve gönder..." autocomplete="off">
+            <button id="send-btn">Gönder</button>
+
+        </div>
+    </div>
+
+    <!-- Mantığımızın çalışacağı JavaScript dosyasını bağlıyoruz -->
+    <script src="app.js"></script>
+</body>
+
+</html>
